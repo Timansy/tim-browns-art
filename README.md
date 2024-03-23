@@ -2,6 +2,8 @@
 
 ## Description
 
+Edits by Tim Brown
+
 Consuming the Google Photos Library API : Access private Albums and Media Items
 
 ## Website
