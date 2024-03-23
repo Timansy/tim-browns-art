@@ -12,6 +12,11 @@ export interface AlbumProps {
 const Album: FunctionComponent<AlbumProps> = ({ album }) => {
   return (
     <article className={styles.item}>
+      <Link
+            href={`album/${album.id}`}
+            aria-label={album.title}
+            title={album.title}
+          >
       <div
         className={styles.cover}
         style={{
@@ -19,15 +24,11 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
         }}
       >
         <h3 className={styles.title}>
-          <Link
-            href={`album/${album.id}`}
-            aria-label={album.title}
-            title={album.title}
-          >
+          
             {album.title.length > 70
               ? album.title.substring(0, 27) + '...'
               : album.title.replace("art-","").replace("painting-","").replace("illustration-","").replace("collection-","")}
-          </Link>
+          
         </h3>
 
         <div style={{ padding: '.5rem', float: 'left' }}>
@@ -46,6 +47,7 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
           <small>{album.mediaItemsCount} items</small>
         </div>
       </div>
+      </Link>
     </article>
   );
 };
