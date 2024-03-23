@@ -24,14 +24,14 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
             aria-label={album.title}
             title={album.title}
           >
-            {album.title.length > 30
+            {album.title.length > 70
               ? album.title.substring(0, 27) + '...'
-              : album.title}
+              : album.title.replace("art-","").replace("painting-","").replace("illustration-","").replace("collection-","")}
           </Link>
         </h3>
 
         <div style={{ padding: '.5rem', float: 'left' }}>
-          <a
+          {/* <a
             href={album.productUrl}
             title={'Open Google Photos'}
             aria-label={'Open Google Photos'}
@@ -39,7 +39,7 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
             rel="noreferrer"
           >
             <FaGoogle role="img" aria-hidden="true" />
-          </a>
+          </a> */}
         </div>
 
         <div className={styles.count}>

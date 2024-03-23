@@ -1,8 +1,9 @@
-import Link from 'next/link';
-import { FunctionComponent } from 'react';
-import { FaGithub, FaHome, FaImages } from 'react-icons/fa';
-import styles from './navbar.module.scss';
-import ThemeToggler from './theme-toggler';
+import Link from "next/link";
+import { FunctionComponent } from "react";
+import { FaHome, FaImages, FaPagelines } from "react-icons/fa";
+import styles from "./navbar.module.scss";
+import { CgBoy } from "react-icons/cg";
+import { FaBroom, FaPencil } from "react-icons/fa6";
 
 const Navbar: FunctionComponent = () => {
   return (
@@ -10,43 +11,60 @@ const Navbar: FunctionComponent = () => {
       <ul className={styles.left}>
         <li>
           <Link href="/">
-            <FaHome
+            <FaImages
               className={styles.icon}
               title="Home"
               aria-label="Home"
               role="img"
             />
-            <span>Photostream</span>
+            <span>Gallery</span>
           </Link>
         </li>
         <li>
-          <Link href="/albums">
-            <FaImages
+          <Link href="/paintings">
+            <FaBroom
               className={styles.icon}
-              title="Albums"
-              aria-label="Albums"
+              title="Paintings"
+              aria-label="Paintings"
               role="img"
             />
-            <span>Albums</span>
+            <span>Paintings</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/illustrations">
+            <FaPencil
+              className={styles.icon}
+              title="Illustrations"
+              aria-label="Illustrations"
+              role="img"
+            />
+            <span>Illustrations</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/collections">
+            <FaPagelines
+              className={styles.icon}
+              title="Collections"
+              aria-label="Collections"
+              role="img"
+            />
+            <span>Collections</span>
           </Link>
         </li>
       </ul>
 
       <ul className={styles.right}>
-        <li>
-          <ThemeToggler />
-        </li>
-        <li>
-          <a
-            href="https://github.com/orbanszlrd/next-google-photos"
-            title="GitHub"
-            aria-label="GitHub"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <FaGithub className={styles.icon} role="img" aria-hidden="true" />
-          </a>
-        </li>
+        <Link href="/about">
+          <span>ABOUT/CONTACT</span>
+          <CgBoy
+            className={styles.icon}
+            title="About"
+            aria-label="About"
+            role="img"
+          />
+        </Link>
       </ul>
     </nav>
   );

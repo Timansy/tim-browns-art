@@ -4,6 +4,7 @@ import justifyLayout from 'justified-layout';
 
 import { GoogleMediaItem } from 'types/google';
 import styles from './media-item-list.module.scss';
+import Link from 'next/link';
 
 export interface MediaItemListProps {
   mediaItems: GoogleMediaItem[];
@@ -67,6 +68,7 @@ const MediaItemList: FunctionComponent<MediaItemListProps> = ({
               height: box.height,
             }}
           >
+            {/* //<Link href={mediaItems[index].baseUrl}> */}
             <Image
               src={mediaItems[index].baseUrl}
               alt={mediaItems[index].filename}
@@ -76,6 +78,7 @@ const MediaItemList: FunctionComponent<MediaItemListProps> = ({
               fill
               unoptimized
             />
+            {/* </Link> */}
           </article>
         ))}
     </div>

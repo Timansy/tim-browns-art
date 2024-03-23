@@ -1,11 +1,11 @@
 {
   "name": "Digital Nomad Photos",
   "short_name": "Digital Nomad Photos",
-  "theme_color": "#000",
+  "theme_color": "#999",
   "background_color": "#000",
   "display": "standalone",
-  "scope": "https://photos.dinodev.hu",
-  "start_url": "https://photos.dinodev.hu",
+  "scope": "https://timbrowns.art",
+  "start_url": "https://timbrowns.art",
   "icons": [
     {
       "src": "https://photos.dinodev.hu/icons/icon-192.png",

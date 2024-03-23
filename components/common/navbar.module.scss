@@ -55,6 +55,23 @@
 
     &.right {
       padding-right: 1rem;
+      .icon {
+        display: none;
+      }
+      span {
+        margin-right : 1rem;
+      }
+
+      @media only screen and (max-width: 600px) {
+        span {
+          display: none;
+        }
+
+        .icon {
+          display: inline;
+          font-size: 1.8rem;
+        }
+      }
     }
   }
 

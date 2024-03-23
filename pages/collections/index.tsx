@@ -41,7 +41,7 @@ const AlbumsPage: NextPage = () => {
   useEffect(() => {
     setFilteredAlbums(
       albums.filter((album: GoogleAlbum) =>
-        album.title.toLowerCase().includes("art-"+filter.toLowerCase())
+        album.title.toLowerCase().includes("art-collection-"+filter.toLowerCase())
       )
     );
   }, [albums, filter]);
@@ -49,26 +49,14 @@ const AlbumsPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Paintings</title>
-        <meta name="description" content="Paintings, by Tim Brown" />
-        {/* <link rel="shortcut icon" href="/icon-295.png" /> */}
+        <title>Collections</title>
+        <meta name="description" content="Collections, by Tim Brown" />
       </Head>
-
-      <h1 hidden>Albums</h1>
 
       {loading ? (
         <Loader />
       ) : (
         <section className={styles.container}>
-          {/* <Filter
-            placeholder="Search"
-            filter={filter}
-            setFilter={setTitleFilter}
-          />
-          <ElementCounter
-            count={filteredAlbums.length}
-            text={{ singular: 'Album', plural: 'Albums' }}
-          /> */}
           <AlbumList albums={filteredAlbums} />
         </section>
       )}
