@@ -37,7 +37,7 @@ const AlbumPage: NextPage = ({
   return (
     <Layout>
       <Head>
-        <title>Tim's Art</title>
+        <title>Tim&#39;s Art</title>
         <meta
           name="description"
           content="Tim's Art"
