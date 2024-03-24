@@ -77,7 +77,7 @@ const MediaItemList: FunctionComponent<MediaItemListProps> = ({
               ).toLocaleString()}
               fill
               unoptimized
-              priority
+              // priority
             />
             {/* </Link> */}
           </article>

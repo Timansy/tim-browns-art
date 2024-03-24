@@ -9,29 +9,36 @@ import Link from "next/link";
 const AboutPage: NextPage = () => {
   return (
     <Layout>
+      {" "}
+      <Head>
+        <title>About/Contact</title>
+        <meta name="description" content="Collections, by Tim Brown" />
+      </Head>
       <body>
         <div className={styles.about}>
-            <div className={styles.link}>
-        <a href="mailto:brown.tim@gmail.com?subject=About your art..." title="About your art...">
-            <FaGoogle
-              className={styles.icon}
-              title="Gmail"
-              aria-label="Gmail"
-              role="img"
-            />
-            <span>tim.brown@gmail.com</span>
-          </a>
-          <br></br>
-          <a href="https://www.instagram.com/tim_a_human_advocate/">
-            <FaInstagram
-              className={styles.icon}
-              title="Instagram"
-              aria-label="Instagram"
-              role="img"
-            />
-            <span>tim_a_human_advocate</span>
-          </a>
-          
+          <div className={styles.link}>
+            <a
+              href="mailto:brown.tim@gmail.com?subject=About your art..."
+              title="About your art..."
+            >
+              <FaGoogle
+                className={styles.icon}
+                title="Gmail"
+                aria-label="Gmail"
+                role="img"
+              />
+              <span>tim.brown@gmail.com</span>
+            </a>
+            <br></br>
+            <a href="https://www.instagram.com/tim_a_human_advocate/">
+              <FaInstagram
+                className={styles.icon}
+                title="Instagram"
+                aria-label="Instagram"
+                role="img"
+              />
+              <span>tim_a_human_advocate</span>
+            </a>
           </div>
           <br></br>
           <h2>ARTIST STATEMENT</h2>
