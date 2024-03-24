@@ -9,6 +9,7 @@ export interface AlbumListProps {
 }
 
 const AlbumList: FunctionComponent<AlbumListProps> = ({ albums }) => {
+  console.log(albums.map((album: GoogleAlbum) => (album.productUrl)))
   return (
     <div className={styles['grid-container']}>
       {albums.map((album: GoogleAlbum) => (

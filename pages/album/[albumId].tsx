@@ -37,10 +37,10 @@ const AlbumPage: NextPage = ({
   return (
     <Layout>
       <Head>
-        <title>Album Photos | Digital Nomad Photos</title>
+        <title>Tim's Art</title>
         <meta
           name="description"
-          content="Album Photos | Digital Nomad Photos"
+          content="Tim's Art"
         />
       </Head>
       {loading ? (

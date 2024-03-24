@@ -47,13 +47,13 @@ const MediaItemList: FunctionComponent<MediaItemListProps> = ({
       horizontal: 4,
       vertical: 4,
     },
-    showWidows: false,
+    showWidows: true,
   });
 
   return (
     <div
       className={styles['justify-container']}
-      style={{ height: layoutGeometry.containerHeight, width: '100%' }}
+      style={{ height: layoutGeometry.containerHeight, width: 'auto' }}
     >
       {layoutGeometry.boxes
         .filter((box) => box.width && box.height)
@@ -77,6 +77,7 @@ const MediaItemList: FunctionComponent<MediaItemListProps> = ({
               ).toLocaleString()}
               fill
               unoptimized
+              priority
             />
             {/* </Link> */}
           </article>
