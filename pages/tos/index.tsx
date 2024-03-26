@@ -18,7 +18,7 @@ const TOSPage: NextPage = () => {
           Please read these terms and conditions &quot;terms and
           conditions&quot;, &quot;terms&quot; carefully before using
           timbrowns.art website &quot;website&quot;, &quot;service&quot;
-          operated by atom and molecule, llc. &quot;us&quot;, 'we&quot;,
+          operated by atom and molecule, llc. &quot;us&quot;, we&quot;,
           &quot;our&quot;. Conditions of use.
         </p>
         <p>
