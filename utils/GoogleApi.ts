@@ -3,7 +3,7 @@ import {
   GoogleAlbumsResponse,
   GoogleMediaItem,
   GoogleMediaItemsResponse,
-} from 'types/google';
+} from 'types/google'; 
 
 export const getGoogleApiToken = async (): Promise<string> => {
   const tokenResult = await fetch(

@@ -2,7 +2,7 @@ import { NextPage } from "next";
 import Head from "next/head";
 import Layout from "components/common/layout";
 import styles from "/components/common/layout.module.scss";
-
+import Image from "next/image";
 import { FaInstagram, FaGoogle } from "react-icons/fa6";
 import Link from "next/link";
 
@@ -46,35 +46,36 @@ const AboutPage: NextPage = () => {
             My pieces are built emotionally and spontaneously, with a healing
             narrative. Some remind me to let go of fear, encourage me to be
             brave, be myself, deal with the unexpected, forgive, or go find
-            nature. It’s been difficult parting from them, instead leveraging
-            them for my own healing, meditations, and meanderings.
+            nature. I’ve developed a relationship with each one, and they are
+            highly emotional kin.
+          </p>
+          <div style={{float: "left", padding: "1rem", paddingLeft: "0rem"}}>
+          <Image
+            src="/bio.jpg"
+            width={120}
+            height={200}
+            alt="Abandoned painting, with a hand"
+          />
+          </div>
+          <p>
+            Finding meaningful balance in my pieces, through shape and color,
+            brings great joy. I’ll tinker, experiment, and explore the miniscule
+            universe being called into existence.
           </p>
           <p>
-            Late in 2021, as covid restrictions were winding down, we had a
-            group of close friends over for some games and social fun. We ended
-            up with some sketch paper and pencils around a table, just chatting
-            it up. There was something about the gathering of old spirits along
-            with the atmosphere, where there were lots of great stories shared
-            with some equally potent edibles. which allowed me to fully put my
-            guard down and draw freely.
+            When folks ask to take a picture of my work, I’ll sometimes ask them
+            to include at least a body part in the view. The work may be
+            interesting, but when compared it to any human feature, from any
+            human being, any art piece doesn’t even come close. We are
+            beautiful, and forgetful of this fact. I hope my work inspires you
+            to explore the power we have. We are the only beings here which can
+            create something from nothing, add darkness light and color, a new
+            tune. The closer a piece comes to reveling in human complexity, the
+            better.
           </p>
+          <h2>ACTIVISM</h2>
           <p>
-            There is joy and authenticity in the act of creating illustrations
-            and paintings spontaneously. I surprise myself all the time. The
-            paper, canvas, rug underside, fabric, substrate, etc. each hold a
-            new universe to collaborate and be intimate with. There are times,
-            when adding a new stroke or color, I find myself perplexed and
-            thinking, “Oh no, what have I done? What is this new element? How
-            will I find balance again? How will it behave with everything else?”
-            It is in these moments, I realize that I am creating something
-            outside my ego’s grasp. Usually, it takes me a few days to
-            internalize the meaning of a finished piece for me. In fact, there
-            are a few I have yet to successfully interpret.
-          </p>
-          <h2>SHOWINGS</h2>
-          <p>
-            Currently looking for spaces to share my work in the Kansas City
-            area.
+            After several years ascending to a cat-bird-seat in my life - 
           </p>
           <h2>ABOUT ME</h2>
           <p>
