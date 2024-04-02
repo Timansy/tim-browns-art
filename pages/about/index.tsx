@@ -49,13 +49,13 @@ const AboutPage: NextPage = () => {
             nature. I’ve developed a relationship with each one, and they are
             highly emotional kin.
           </p>
-          <div style={{float: "left", padding: "1rem", paddingLeft: "0rem"}}>
-          <Image
-            src="/bio.jpg"
-            width={120}
-            height={200}
-            alt="Abandoned painting, with a hand"
-          />
+          <div style={{ float: "left", padding: "1rem", paddingLeft: "0rem" }}>
+            <Image
+              src="/bio.jpg"
+              width={120}
+              height={200}
+              alt="Abandoned painting, with a hand"
+            />
           </div>
           <p>
             Finding meaningful balance in my pieces, through shape and color,
@@ -65,7 +65,7 @@ const AboutPage: NextPage = () => {
           <p>
             When folks ask to take a picture of my work, I’ll sometimes ask them
             to include at least a body part in the view. The work may be
-            interesting, but when compared it to any human feature, from any
+            interesting, but when compared  any human feature, from any
             human being, any art piece doesn’t even come close. We are
             beautiful, and forgetful of this fact. I hope my work inspires you
             to explore the power we have. We are the only beings here which can
@@ -75,7 +75,25 @@ const AboutPage: NextPage = () => {
           </p>
           <h2>ACTIVISM</h2>
           <p>
-            After several years ascending to a cat-bird-seat in my life - 
+            Human beings everywhere are becoming more and more engaged in one
+            form of activism or another. Now the point of need. I look for
+            transformative experiences related to art and community building.
+          </p>
+          <p>
+            I currently support{" "}
+            <Link href={"https://food4lives.org"}><u>food4lives</u></Link> in
+            Atlanta, GA. We provide volunteer opportunities for community
+            outreach, with daily preparation and delivery of vegetarian meals to
+            the unhoused and displaced.
+          </p>
+          <p>
+            I have recently moved to KCMO, and am currently exploring ways to
+            impact the community.
+          </p>
+          <h2>SHOWINGS</h2>
+          <p>
+            Currently looking for spaces to share my work in the Kansas City
+            area.
           </p>
           <h2>ABOUT ME</h2>
           <p>
