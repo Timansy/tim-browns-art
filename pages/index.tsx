@@ -16,6 +16,7 @@ import Filter from 'components/common/filter';
 import Layout from 'components/common/layout';
 import Loader from 'components/common/loader';
 
+
 const AlbumsPage: NextPage = () => {
   const loading = useSelector((state: RootState) => state.photoLibrary.loading);
   const albums = useSelector((state: RootState) => state.photoLibrary.albums);
@@ -49,7 +50,7 @@ const AlbumsPage: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Paintings</title>
+        <title>Gallery</title>
         <meta name="description" content="Paintings, by Tim Brown" />
         {/* <link rel="shortcut icon" href="/icon-295.png" /> */}
       </Head>
