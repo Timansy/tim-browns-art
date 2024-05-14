@@ -14,6 +14,7 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
     .replace("art-", "")
     .replace("painting-", "")
     .replace("illustration-", "")
+    .replace("photos-", "")
     .replace("collection-", "")
     .split(":");
   return (

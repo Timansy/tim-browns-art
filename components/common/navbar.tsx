@@ -3,7 +3,7 @@ import { FunctionComponent } from "react";
 import { FaHome, FaImages, FaPagelines } from "react-icons/fa";
 import styles from "./navbar.module.scss";
 import { CgBoy } from "react-icons/cg";
-import { FaBroom, FaPencil } from "react-icons/fa6";
+import { FaBroom, FaCamera, FaPencil } from "react-icons/fa6";
 
 const Navbar: FunctionComponent = () => {
   return (
@@ -40,6 +40,17 @@ const Navbar: FunctionComponent = () => {
               role="img"
             />
             <span>Illustrations</span>
+          </Link>
+        </li>
+        <li>
+          <Link href="/photos">
+            <FaCamera
+              className={styles.icon}
+              title="Photos"
+              aria-label="Photo"
+              role="img"
+            />
+            <span>Photos</span>
           </Link>
         </li>
         <li>
