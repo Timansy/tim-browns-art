@@ -35,7 +35,7 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
           <h4 className={styles.description}>{titleDescription[1]}</h4>
           }
           <div style={{ padding: ".5rem", float: "left" }}>
-            {/* <a
+            <a
             href={album.productUrl}
             title={'Open Google Photos'}
             aria-label={'Open Google Photos'}
@@ -43,7 +43,7 @@ const Album: FunctionComponent<AlbumProps> = ({ album }) => {
             rel="noreferrer"
           >
             <FaGoogle role="img" aria-hidden="true" />
-          </a> */}
+          </a>
           </div>
 
           <div className={styles.count}>

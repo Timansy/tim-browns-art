@@ -8,7 +8,7 @@ import { FaBroom, FaCamera, FaPencil } from "react-icons/fa6";
 const Navbar: FunctionComponent = () => {
   return (
     <nav className={styles.nav}>
-      <ul className={styles.left}>
+      {/* <ul className={styles.left}>
         <li>
           <Link href="/">
             <FaImages
@@ -64,7 +64,7 @@ const Navbar: FunctionComponent = () => {
             <span>Collections</span>
           </Link>
         </li>
-      </ul>
+      </ul> */}
 
       <ul className={styles.right}>
         <Link href="/about">
